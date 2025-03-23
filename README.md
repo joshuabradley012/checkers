@@ -1,5 +1,7 @@
 # Checkers React App
 
+Preview: https://joshbradley.me/checkers/index.html
+
 ## Requirements
 - `git`
 - `npm`
