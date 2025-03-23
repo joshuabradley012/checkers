@@ -1,0 +1,29 @@
+@use 'colors';
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  &.active {
+    display: flex;
+  }
+
+  .modal-inner {
+    border-radius: 1rem;
+    min-width: 30rem;
+    box-shadow: colors.$shadow;
+    background-color: colors.$grey;
+    text-align: center;
+    padding: 2rem;
+
+    .modal-title {
+      margin-top: 0;
+    }
+  }
+}

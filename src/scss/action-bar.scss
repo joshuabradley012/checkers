@@ -1,0 +1,20 @@
+.action-bar {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+
+  .surrender-button {
+    width: 1.6rem;
+    height: 1.6rem;
+    cursor: pointer;
+    background-image: url(../images/flag.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: .4;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

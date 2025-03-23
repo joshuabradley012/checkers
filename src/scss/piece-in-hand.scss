@@ -1,0 +1,17 @@
+@use 'colors';
+@use 'piece';
+
+.piece-in-hand {
+  pointer-events: none;
+  display: none;
+  position: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 85%;
+  transform: translate(-50%, -50%);
+
+  @include piece.names {
+    display: block;
+  }
+  @include piece.backgrounds;
+}

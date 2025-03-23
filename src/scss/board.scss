@@ -1,0 +1,33 @@
+.board {
+  width: calc(100vh - 150px);
+  max-width: 100%;
+
+  .board-bar {
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    margin: .5rem;
+  }
+
+  .board-container {
+    position: relative;
+    flex: auto;
+
+    &::before {
+      content: '';
+      display: block;
+      padding-bottom: 100%;
+    }
+
+    .board-inner {
+      grid-template-columns: repeat(8, 1fr);
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: grid;
+    }
+  }
+}
+

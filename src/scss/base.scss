@@ -1,0 +1,40 @@
+@use 'colors';
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+html, body {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  background-color: colors.$grey;
+  color: colors.$white;
+  font-family: Helvetica, sans-serif;
+  font-size: 62.5%;
+  line-height: 1.375;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.btn {
+  cursor: pointer;
+  border-radius: .5rem;
+  border: 0;
+  background: colors.$green;
+  color: colors.$white;
+  padding: 1.5rem 3rem;
+  font-size: 1.6rem;
+  line-height: 1;
+  font-weight: 700;
+
+  &:hover {
+    background: colors.$light-green;
+  }
+}

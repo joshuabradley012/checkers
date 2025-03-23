@@ -1,0 +1,23 @@
+@mixin names {
+  &.piece-white,
+  &.piece-black,
+  &.piece-white-king,
+  &.piece-black-king {
+    @content;
+  }
+}
+
+@mixin backgrounds {
+  &.piece-white {
+    background-image: url(../images/white.png);
+  }
+  &.piece-black {
+    background-image: url(../images/black.png);
+  }
+  &.piece-white-king {
+    background-image: url(../images/white-king.png);
+  }
+  &.piece-black-king {
+    background-image: url(../images/black-king.png);
+  }
+}

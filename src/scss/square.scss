@@ -1,0 +1,24 @@
+@use 'colors';
+@use 'piece';
+
+.square {
+  user-drag: none;
+  user-select: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 85%;
+
+  &.light {
+    background-color: colors.$eggshell;
+  }
+  &.dark {
+    background-color: colors.$green;
+  }
+  @include piece.names {
+    cursor: grab;
+    .grabbing & {
+      cursor: grabbing;
+    }
+  }
+  @include piece.backgrounds;
+}
